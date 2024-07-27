@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn and SignUp</title>
+    <link rel="stylesheet" href="./Style.css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="main_div">
+        <div class="outer_div">
+            <div class="heading">
+                <h1 class="heading1" id="heading1">LogIn</h1><hr>
+                <h1 class="heading2" id="heading2">SignUp</h1>
+            </div>
+            
+            <!-- Login Form -->
+            <form id="login_form" class="form_div" action="/login" method="POST">
+                <div class="input_div">
+                    <div class="name_div"><i class="fa-solid fa-user"></i><input type="text" name="username" id="login_name" placeholder="Username" required></div>
+                    <div class="password_div"><i class="fa-solid fa-key"></i><input type="password" name="password" id="login_password" placeholder="Password" required></div>
+                    <div class="reset_password_div"><a href="index2.html">Forgot Password?</a></div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="login_button">LogIn</button>
+                </div>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signup_form" class="form_div" action="/signup" method="POST">
+                <div class="input_div">
+                    <div class="name_div"><i class="fa-solid fa-user"></i><input type="text" name="username" id="username" placeholder="Username" required></div>
+                    <div class="email_div"><i class="fa-solid fa-envelope"></i><input type="email" name="email" id="email" placeholder="Email" required></div>
+                    <div class="password_div"><i class="fa-solid fa-key"></i><input type="password" name="password" id="password" placeholder="Password" required></div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="signup_button">SignUp</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

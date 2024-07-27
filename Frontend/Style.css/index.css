@@ -1,0 +1,110 @@
+/* style.css */
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    background-image: url('../pexels-photo-346529.jpeg');
+    background-size: cover;
+}
+ .main_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+ }
+ .outer_div{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 344px;
+    height: 365px;
+    padding: 13px;
+    backdrop-filter: blur(4px);
+ }
+
+.heading{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.heading1:hover{
+    cursor: pointer;
+    color: blue;
+    
+}
+.heading2:hover{
+    cursor: pointer;
+    color: blue;
+    
+}
+.input_div{
+    display: flex;
+    flex-direction: column;
+    gap: 26px
+}
+.form_div{
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    height: 29px;
+    border-radius: 15px;
+    border: 0px solid black;
+    box-shadow: 0px 0px 4px white;
+    padding-left: 17px;
+    width: 100%;
+}
+.name_div,.password_div,.email_div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  
+}
+.login_button{
+    height: 34px;
+    width: 93px;
+    border: 0px solid black;
+    border-radius: 50px;
+    background-color: dodgerblue;
+    color: white;
+    margin-top: 31px;
+}
+.login_button:hover{
+    cursor: pointer;
+}
+hr{
+    padding: 0;
+    margin: 0;
+    height: 70px;
+}
+.signup_button{
+    height: 34px;
+    width: 93px;
+    border: 0px solid black;
+    border-radius: 50px;
+    background-color: dodgerblue;
+    color: white;
+    margin-top: 31px;
+}
+.signup_button:hover{
+    cursor: pointer;
+}
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent element */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: inline; /* Set display property */
+}
+a:hover{
+    color: blue;
+}
