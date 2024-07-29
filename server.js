@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, '/Frontend')));
 
 app.use('/', router);
 
-const port=process.env.PORT||3000;
+const port=process.env.PORT||10000;
 app.listen(port, () => {
     console.log("server is running");
 });
