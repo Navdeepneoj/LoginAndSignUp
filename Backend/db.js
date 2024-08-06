@@ -1,11 +1,13 @@
 const mongoose= require("mongoose");
 require('dotenv').config();
-// const mongoUrl="mongodb://localhost:27017/FlatData";
+// const url="mongodb://localhost:27017/FlatData";
 const url=process.env.DB_URL;
-mongoose.connect(url,{
-    useNewUrlParser:true,
-    useUnifiedTopology:true
-}) 
+// mongoose.connect(url,{
+//     useNewUrlParser:true,
+//     useUnifiedTopology:true
+// }) 
+mongoose.connect(url);
+
 
 const db=mongoose.connection;
 
